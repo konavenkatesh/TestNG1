@@ -30,7 +30,7 @@ public class LoginStepsWithPageV {
 		loginpage.enterPassword(password);
 		loginpage.login();
 		String actual=dashboardpage.DboardTabName();
-		commonpage.clickLogout();
+		//commonpage.clickLogout();
 		return actual;
 		
 	}
