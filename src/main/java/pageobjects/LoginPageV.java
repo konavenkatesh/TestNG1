@@ -9,10 +9,10 @@ public class LoginPageV {
 	///hello
 	@FindBy(id="userName")
 	WebElement user;
-	
+	//pass
 	@FindBy(id="password")
 	WebElement password;
-	
+	//login
 	@FindBy(xpath="//button[text()='Login']")
 	WebElement login;
 	
