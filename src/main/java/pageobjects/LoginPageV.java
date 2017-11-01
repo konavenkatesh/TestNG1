@@ -2,7 +2,7 @@ package pageobjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+//by venki
 public class LoginPageV {
 	
 	//This is master branch venki 111 ###################################################
@@ -34,7 +34,7 @@ public class LoginPageV {
 	@FindBy(xpath=".//*[@id='message']")
 	WebElement invalidEmailMsg;
 	
-	
+	//setters getters
 	public void enterUserName(String userName)
 	{
 		user.sendKeys(userName);
