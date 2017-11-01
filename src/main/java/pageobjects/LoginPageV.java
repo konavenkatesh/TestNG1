@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPageV {
 	
-	//test comment kkkkk
+	
 	@FindBy(id="userName")
 	WebElement user;
 	
