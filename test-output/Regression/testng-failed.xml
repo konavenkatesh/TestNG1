@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
-  <listeners>
-    <listener class-name="util.CustomListener"/>
-    <listener class-name="util.AnnotationTransformer"/>
-  </listeners>
   <test name="UsersTest(failed)">
     <classes>
       <class name="login.LoginWithPagesV">
         <methods>
-          <include name="validLogin"/>
-          <include name="instantiateBrowser"/>
+          <include name="instantiateBrowser1"/>
+          <include name="invalidLogin3"/>
+          <include name="closeBrowser"/>
+          <include name="invalid_EmailId_ForgotPasswordLink"/>
         </methods>
       </class> <!-- login.LoginWithPagesV -->
-      <class name="Users.UsersSearch">
-        <methods>
-          <include name="searchUser"/>
-        </methods>
-      </class> <!-- Users.UsersSearch -->
     </classes>
   </test> <!-- UsersTest(failed) -->
 </suite> <!-- Failed suite [Regression] -->

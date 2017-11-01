@@ -3,17 +3,19 @@
 
 
 <suite name="Regression">
-
-	<listeners>
-		<listener class-name="util.CustomListener"/>
-		<listener class-name="util.AnnotationTransformer"/>
-	</listeners>	
-
+		<listeners>
+			<listener class-name="util.CustomListener"/>
+			<listener class-name="util.AnnotationTransformer"/>
+		</listeners>	
+	
     <test name="UsersTest">
 		
-    	<classes>
+		
+	   	<classes>
             <class name="login.LoginWithPagesV"/>
-           <class name="Users.UsersSearch"/>
+            
+			<class name="Users.UsersSearch"/>
+           
         </classes>
     
     </test>

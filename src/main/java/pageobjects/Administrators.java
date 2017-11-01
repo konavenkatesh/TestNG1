@@ -2,6 +2,7 @@ package pageobjects;
 
 import java.sql.Array;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -10,6 +11,8 @@ import org.openqa.selenium.support.FindBy;
 import static util.DriverManagerV.driver;
 
 public class Administrators {
+
+	
 
 	
 
@@ -23,8 +26,11 @@ public class Administrators {
 	WebElement searchbox;
 	
 	
-	@FindBy(xpath=".//*[@id='example']/tbody/tr")
+	@FindBy(xpath=(".//*[@id='example']/tbody/tr"))
 	List<WebElement> resultsCount;
+	
+	@FindBy(xpath=(".//*[@id='example']/tbody/tr[i]/td[2]/a"))
+	WebElement resultsTable;
 	
 	
 	public void clickAdminTab()
@@ -44,18 +50,21 @@ public class Administrators {
 	}
 	
 	
-	public String isuserAvailable(String username)
+	public List<String> isUserAvailable()
 	{
-		String name ="";
-		
-		for(int i=1;i<=resultsCount.size();i++)
-		{
-			System.out.println(resultsCount);
-		
-			name = driver.findElement(By.xpath("//*[@id='example']/tbody/tr["+i+"]/td[2]/a")).getText();
-			if(name.equalsIgnoreCase(username));
-		}
-		return name;
+		List<String> results=new LinkedList<>();
+		for(WebElement e: resultsCount){
+				System.out.println(e.getText());
+				
+				String name1=e.getText();
+				
+				String[] name2= name1.split(" ");
+				
+				results.add(name2[0]);
+			
+			}
+					
+		return results;
 		
 	}
 	

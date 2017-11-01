@@ -7,7 +7,6 @@
         <methods>
           <include name="invalidLogin"/>
           <include name="validLogin"/>
-          <include name="closeBrowser"/>
           <include name="instantiateBrowser"/>
         </methods>
       </class> <!-- login.LoginWithPagesV -->

@@ -1,33 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="26056" started-at="2017-08-20T17:19:53Z" finished-at="2017-08-20T17:20:19Z">
+  <suite name="Regression" duration-ms="116278" started-at="2017-10-26T13:52:57Z" finished-at="2017-10-26T13:54:53Z">
     <groups>
       <group name="Regression">
-        <method signature="LoginWithPagesV.validLogin()[pri:0, instance:login.LoginWithPagesV@5f341870]" name="validLogin" class="login.LoginWithPagesV"/>
+        <method signature="LoginWithPagesV.validLogin()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="validLogin" class="login.LoginWithPagesV"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="UsersTest" duration-ms="26056" started-at="2017-08-20T17:19:53Z" finished-at="2017-08-20T17:20:19Z">
-      <class name="Users.UsersSearch">
-        <test-method status="PASS" signature="searchUser()[pri:0, instance:Users.UsersSearch@271053e1]" name="searchUser" duration-ms="13140" started-at="2017-08-20T22:50:06Z" finished-at="2017-08-20T22:50:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchUser -->
-      </class> <!-- Users.UsersSearch -->
+    <test name="UsersTest" duration-ms="116278" started-at="2017-10-26T13:52:57Z" finished-at="2017-10-26T13:54:53Z">
       <class name="login.LoginWithPagesV">
-        <test-method status="PASS" signature="instantiateBrowser()[pri:0, instance:login.LoginWithPagesV@5f341870]" name="instantiateBrowser" is-config="true" duration-ms="12224" started-at="2017-08-20T22:49:40Z" finished-at="2017-08-20T22:49:53Z">
+        <test-method status="PASS" signature="instantiateBrowser1()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="instantiateBrowser1" is-config="true" duration-ms="14438" started-at="2017-10-26T09:52:57Z" finished-at="2017-10-26T09:53:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- instantiateBrowser -->
-        <test-method status="PASS" signature="invalidLogin()[pri:0, instance:login.LoginWithPagesV@5f341870]" name="invalidLogin" duration-ms="1333" started-at="2017-08-20T22:49:53Z" finished-at="2017-08-20T22:49:54Z">
+        </test-method> <!-- instantiateBrowser1 -->
+        <test-method status="PASS" signature="clickForgotPasswordLink()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="clickForgotPasswordLink" duration-ms="5984" started-at="2017-10-26T09:53:11Z" finished-at="2017-10-26T09:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickForgotPasswordLink -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="closeBrowser" is-config="true" duration-ms="71" started-at="2017-10-26T09:53:17Z" finished-at="2017-10-26T09:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="instantiateBrowser1()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="instantiateBrowser1" is-config="true" duration-ms="13197" started-at="2017-10-26T09:53:17Z" finished-at="2017-10-26T09:53:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateBrowser1 -->
+        <test-method status="PASS" signature="invalidLogin()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="invalidLogin" duration-ms="1168" started-at="2017-10-26T09:53:30Z" finished-at="2017-10-26T09:53:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLogin -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:login.LoginWithPagesV@5f341870]" name="validLogin" duration-ms="11555" started-at="2017-08-20T22:49:54Z" finished-at="2017-08-20T22:50:06Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="closeBrowser" is-config="true" duration-ms="73" started-at="2017-10-26T09:53:32Z" finished-at="2017-10-26T09:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="instantiateBrowser1()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="instantiateBrowser1" is-config="true" duration-ms="11155" started-at="2017-10-26T09:53:32Z" finished-at="2017-10-26T09:53:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateBrowser1 -->
+        <test-method status="PASS" signature="invalidLogin1()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="invalidLogin1" duration-ms="1150" started-at="2017-10-26T09:53:43Z" finished-at="2017-10-26T09:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin1 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="closeBrowser" is-config="true" duration-ms="2044" started-at="2017-10-26T09:53:44Z" finished-at="2017-10-26T09:53:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="instantiateBrowser1()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="instantiateBrowser1" is-config="true" duration-ms="11189" started-at="2017-10-26T09:53:46Z" finished-at="2017-10-26T09:53:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateBrowser1 -->
+        <test-method status="PASS" signature="invalidLogin2()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="invalidLogin2" duration-ms="1468" started-at="2017-10-26T09:53:57Z" finished-at="2017-10-26T09:53:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin2 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="closeBrowser" is-config="true" duration-ms="138" started-at="2017-10-26T09:53:59Z" finished-at="2017-10-26T09:53:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="instantiateBrowser1()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="instantiateBrowser1" is-config="true" duration-ms="11352" started-at="2017-10-26T09:53:59Z" finished-at="2017-10-26T09:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateBrowser1 -->
+        <test-method status="FAIL" signature="invalidLogin3()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="invalidLogin3" duration-ms="364" started-at="2017-10-26T09:54:10Z" finished-at="2017-10-26T09:54:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Invalid user name/password  ] but found [Please provide user name]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Invalid user name/password  ] but found [Please provide user name]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at login.LoginWithPagesV.invalidLogin3(LoginWithPagesV.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin3 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="closeBrowser" is-config="true" duration-ms="278" started-at="2017-10-26T09:54:11Z" finished-at="2017-10-26T09:54:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="instantiateBrowser1()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="instantiateBrowser1" is-config="true" duration-ms="12441" started-at="2017-10-26T09:54:11Z" finished-at="2017-10-26T09:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateBrowser1 -->
+        <test-method status="FAIL" signature="invalid_EmailId_ForgotPasswordLink()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="invalid_EmailId_ForgotPasswordLink" duration-ms="5926" started-at="2017-10-26T09:54:23Z" finished-at="2017-10-26T09:54:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please provide valid email] but found [ ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please provide valid email] but found [ ]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at login.LoginWithPagesV.invalid_EmailId_ForgotPasswordLink(LoginWithPagesV.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_EmailId_ForgotPasswordLink -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="closeBrowser" is-config="true" duration-ms="2050" started-at="2017-10-26T09:54:29Z" finished-at="2017-10-26T09:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="instantiateBrowser1()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="instantiateBrowser1" is-config="true" duration-ms="11236" started-at="2017-10-26T09:54:31Z" finished-at="2017-10-26T09:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateBrowser1 -->
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="validLogin" duration-ms="8437" started-at="2017-10-26T09:54:42Z" finished-at="2017-10-26T09:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:login.LoginWithPagesV@548a9f61]" name="closeBrowser" is-config="true" duration-ms="2087" started-at="2017-10-26T09:54:51Z" finished-at="2017-10-26T09:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- login.LoginWithPagesV -->
     </test> <!-- UsersTest -->
   </suite> <!-- Regression -->

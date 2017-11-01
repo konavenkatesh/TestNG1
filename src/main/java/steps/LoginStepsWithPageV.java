@@ -46,5 +46,41 @@ public class LoginStepsWithPageV {
 	}
 	
 	
+	public String clickForgotPasswordLink(String emailId) throws InterruptedException
+	{
+		loginpage.clickForgotPasswordLink();
+		loginpage.clearEmailID();
+		loginpage.enterEmailID(emailId);
+		loginpage.clickSendMeLoginDetails();
+		Thread.sleep(2000);
+		String actual = loginpage.getForgotEmailConfirmationMessage();
+		return actual;
+		
+	}
+	
+	public String enterInvalidEmailId(String emailId) throws InterruptedException
+	{
+		loginpage.clickForgotPasswordLink();
+		loginpage.clearEmailID();
+		loginpage.enterEmailID(emailId);
+		loginpage.clickSendMeLoginDetails();
+		Thread.sleep(2000);
+		String actual = loginpage.getInvalidEmailText();
+		return actual;
+		
+	}
+	
+	public String enterEmptyEmailId(String emailId) throws InterruptedException
+	{
+		loginpage.clickForgotPasswordLink();
+		loginpage.clearEmailID();
+		loginpage.enterEmailID(emailId);
+		loginpage.clickSendMeLoginDetails();
+		Thread.sleep(2000);
+		String actual = loginpage.getInvalidEmailText();
+		return actual;
+		
+	}
+	
 
 }

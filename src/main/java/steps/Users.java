@@ -1,6 +1,13 @@
 package steps;
 
+import static org.testng.Assert.assertTrue;
+
+import java.util.List;
+
+import org.apache.commons.logging.Log;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import pageobjects.Administrators;
 import pageobjects.CommonPage;
@@ -15,6 +22,7 @@ public class Users {
 	DashboardPageV dashboardpage;
 	CommonPage commonpage;
 	Administrators adminstrators;
+	private static Logger Log = Logger.getLogger(Log.class.getName());
 	
 	public Users()
 	{
@@ -26,13 +34,30 @@ public class Users {
 		
 	}
 	
-	public String userSearch(String userName)
+	public void userSearch(String userName)
 	{
 		adminstrators.clickAdminTab();
 		adminstrators.clickUserManagementTab();
 		adminstrators.enterUserName(userName);
-		String name=adminstrators.isuserAvailable(userName);
-		return name;
+		List<String> results=adminstrators.isUserAvailable();
+
+		for(String rname:results)
+		{
+			if(rname.equals(userName))
+			{
+				Assert.assertTrue(true);
+				Log.info("User is available");
+			}
+			else
+			{
+				Assert.assertFalse(false);
+				Log.info("User is not available");
+				
+			}
+			
+		}
+		
+			
 		
 	}
 	

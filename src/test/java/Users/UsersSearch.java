@@ -14,11 +14,9 @@ public class UsersSearch {
 		
 		Users user=new Users();
 		
-		String name=user.userSearch("venkatesh");
+		user.userSearch("sssss");
 		
-		String actual="venkatesh";
 		
-		Assert.assertEquals(name, actual);
 	}
 	
 
