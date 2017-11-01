@@ -93,4 +93,9 @@ public class LoginPageV {
 		return invalidEmailMsg.getText();
 	}
 	
+	public void test()
+	{
+		System.out.println("");
+	}
+	
 }
