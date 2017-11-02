@@ -36,7 +36,7 @@ public class LoginPageV {
 	WebElement invalidEmailMsg;
 	
 	//Methods
-	
+	//Test Methods
 	public void enterUserName(String userName)
 	{
 		user.sendKeys(userName);
