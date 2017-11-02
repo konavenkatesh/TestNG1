@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPageV {
 	
 	//Test Comments from Venkatesh
+	
+	//Todays Update
 	@FindBy(id="userName")
 	WebElement user;
 	
@@ -33,6 +35,7 @@ public class LoginPageV {
 	@FindBy(xpath=".//*[@id='message']")
 	WebElement invalidEmailMsg;
 	
+	//Methods
 	
 	public void enterUserName(String userName)
 	{
