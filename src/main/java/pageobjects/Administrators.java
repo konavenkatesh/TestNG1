@@ -15,6 +15,8 @@ public class Administrators {
 	//Changes from Local
 
 	//Changes from Git
+	
+	//This is admin page object comments
 
 	@FindBy(linkText="Administrators")
 	WebElement administrators;
