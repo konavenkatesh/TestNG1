@@ -17,6 +17,8 @@ public class Administrators {
 	//Changes from Git
 	
 	//This is admin page object comments
+	
+	//These are comments from GitLab
 
 	@FindBy(linkText="Administrators")
 	WebElement administrators;
